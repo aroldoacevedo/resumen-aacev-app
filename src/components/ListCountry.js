@@ -42,6 +42,10 @@ export const ListCountry = () => {
                    field: "Deaths"
                  },
                  { 
+                  title: "CASOS RECUPERACION", 
+                  field: "Recovered"
+                },
+                 { 
                     title: "FECHA", 
                     field: "Date"
                   }
