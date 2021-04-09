@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Summary } from './Summary';
 import { Pagination } from './Pagination';
+import { URL_BACKEND } from '../config/config';
 
 export const ListSummary = () => {
 
@@ -13,8 +14,7 @@ export const ListSummary = () => {
     useEffect(() => {
         const fetchPosts = async() => {
           setLoading(true);
-          //const url = `http://localhost:8080/api/resumen`;
-          const url = `https://resumen-covid19-aacev-backend.herokuapp.com/api/resumen`;
+          const url = `${URL_BACKEND}/api/resumen`;
 
           const response = await axios.get( url );
           setPosts(response.data);

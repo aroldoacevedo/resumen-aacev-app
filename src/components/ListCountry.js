@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { BackButton } from './BackButton';
 import MaterialTable from "material-table"; 
+import { URL_BACKEND } from '../config/config';
 
 export const ListCountry = () => {
 
@@ -11,8 +12,7 @@ export const ListCountry = () => {
 
     useEffect(() => {
         const fetchPosts = async() => {
-          //const url = `http://localhost:8080/api/pais/${name}`;
-          const url = `https://resumen-covid19-aacev-backend.herokuapp.com/api/pais/${name}`;
+          const url = `${URL_BACKEND}/api/pais/${name}`;
 
           const response = await axios.get( url );
           setPosts(response.data);
