@@ -11,8 +11,8 @@ export const ListCountry = () => {
 
     useEffect(() => {
         const fetchPosts = async() => {
-          const url = `http://localhost:8080/api/pais/${name}`;
-          //const url = `https://summary-aacevedo-backend.herokuapp.com/api/country/${name}`;
+          //const url = `http://localhost:8080/api/pais/${name}`;
+          const url = `https://resumen-covid19-aacev-backend.herokuapp.com/api/pais/${name}`;
 
           const response = await axios.get( url );
           setPosts(response.data);
