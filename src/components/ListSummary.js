@@ -13,7 +13,7 @@ export const ListSummary = () => {
     useEffect(() => {
         const fetchPosts = async() => {
           setLoading(true);
-          const url = `http://localhost:8080/api/summary`;
+          const url = `http://localhost:8080/api/resumen`;
           //const url = `https://summary-aacevedo-backend.herokuapp.com/api/summary`;
 
           const response = await axios.get( url );

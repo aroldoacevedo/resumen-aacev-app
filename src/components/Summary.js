@@ -15,7 +15,7 @@ export const Summary = ({ posts, loading}) => {
         {
             posts.map(post => ( 
                 <div className="col-sm-3 my-3">
-                    <Link to={`/country/${post.Country}`}  className="link">
+                    <Link to={`/country/${post.Slug}`}  className="link">
                         <div className="card">
                             <div className="card-header">
                                 <h5 className="card-title">{post.Country}</h5>

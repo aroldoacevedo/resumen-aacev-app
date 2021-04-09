@@ -11,7 +11,7 @@ export const ListCountry = () => {
 
     useEffect(() => {
         const fetchPosts = async() => {
-          const url = `http://localhost:8080/api/country/${name}`;
+          const url = `http://localhost:8080/api/pais/${name}`;
           //const url = `https://summary-aacevedo-backend.herokuapp.com/api/country/${name}`;
 
           const response = await axios.get( url );
